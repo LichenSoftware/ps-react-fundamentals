@@ -16,7 +16,15 @@ const Realtor = () => {
         <div className="col-12" onClick={() => navigate(navValues.home)}>Return to Listings</div>
         
           </div>
-        
+          <div className="row">
+            <img
+                className="img-fluid"
+                src={
+                realtor.photo ? `./realtorImages/${realtor.photo}.jpg` : defaultPhoto
+                }
+                alt="Realtor pic"
+            />
+        </div>
       </div>
       <div className="col-6">
         <div className="row mt-2">
