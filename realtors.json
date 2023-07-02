@@ -1,0 +1,26 @@
+{
+    "realtors": [
+      {
+        "id": 1,
+        "name": "Rick James",
+        "phone": "456.258.6589",
+        "email": "RickJames@RickJamesHomes.com",
+        "photo": "277667"
+      },
+      {
+        "id": 2,
+        "name": "John Adams",
+        "phone": "236.352.3254",
+        "email": "JohnAdams@JohnAdamsHomes.com",
+        "photo": "277667"
+      },
+      {
+        "id": 3,
+        "name": "Martin Thomas",
+        "phone": "124.528.2589",
+        "email": "MartinThomas@MartinThomasHomes.com",
+        "photo": "277667"
+      }
+    ]
+  }
+  

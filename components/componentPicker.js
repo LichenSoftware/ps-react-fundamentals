@@ -1,6 +1,7 @@
 import navValues from "../helpers/navValues";
 import House from "./house";
 import HouseList from "./houseList";
+import Realtor from "./realtor";
 
 const ComponentPicker = ({ currentNavLocation }) => {
   switch (currentNavLocation) {
@@ -8,6 +9,8 @@ const ComponentPicker = ({ currentNavLocation }) => {
       return <HouseList />;
     case navValues.house:
       return <House />;
+    case navValues.realtor:
+      return <Realtor />;
     default:
       return (
         <h3>

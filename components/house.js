@@ -6,17 +6,25 @@ import BidList from "./bidList";
 import useBids from "../hooks/useBids";
 import loadingStatus from "../helpers/loadingStatus";
 import AddBid from "./addBid";
+import RealtorList from "./realtorList";
+import Link from "next/link";
+import navValues from "../helpers/navValues";
 
 const House = () => {
   const { param: house } = useContext(navigationContext);
   const { bids, loadingState, addBid } = useBids(house.id);
+  const { navigate } = useContext(navigationContext);
 
   if (loadingState !== loadingStatus.loaded)
     return <loadingIndicator loadingState={loadingState} />;
 
   return (
-    <div className="row">
+    <div className="row">      
       <div className="col-6">
+        <div className="row mt-2">
+        <div className="col-12" onClick={() => navigate(navValues.home)}>Return to Listings</div>
+        
+          </div>
         <div className="row">
           <img
             className="img-fluid"
@@ -45,7 +53,13 @@ const House = () => {
         <BidList bids={bids} />
         <AddBid house={house} addBid={addBid} />
       </div>
+      <div className="row">
+        <div className="col-12 mt-3">
+          <RealtorList />
+        </div>            
+      </div>
     </div>
+    
   );
 };
 

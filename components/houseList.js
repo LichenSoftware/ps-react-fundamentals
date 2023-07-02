@@ -1,3 +1,4 @@
+
 import loadingStatus from "../helpers/loadingStatus";
 import useHouses from "../hooks/useHouses";
 import HouseRow from "./houseRow";

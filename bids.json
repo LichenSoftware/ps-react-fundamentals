@@ -77,6 +77,12 @@
       "bidder": "Roland",
       "amount": 203000,
       "id": 13
+    },
+    {
+      "houseId": 2,
+      "bidder": "Jim Dugan",
+      "amount": 325000,
+      "id": 14
     }
   ]
 }
